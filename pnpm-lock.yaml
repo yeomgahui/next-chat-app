@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      classnames:
+        specifier: ^2.5.1
+        version: 2.5.1
       next:
         specifier: 14.2.14
         version: 14.2.14(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.4)
@@ -17,9 +20,6 @@ importers:
       react-dom:
         specifier: ^18
         version: 18.3.1(react@18.3.1)
-      sass:
-        specifier: ^1.79.4
-        version: 1.79.4
     devDependencies:
       '@types/node':
         specifier: ^20
@@ -361,6 +361,9 @@ packages:
   chokidar@4.0.1:
     resolution: {integrity: sha512-n8enUVCED/KVRQlab1hr3MVpcVMvxtZjmEa956u+4YijlmQED223XMSYj2tLuKvr4jcCTzNNMpQDUer72MMmzA==}
     engines: {node: '>= 14.16.0'}
+
+  classnames@2.5.1:
+    resolution: {integrity: sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==}
 
   client-only@0.0.1:
     resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
@@ -1707,6 +1710,9 @@ snapshots:
   chokidar@4.0.1:
     dependencies:
       readdirp: 4.0.2
+    optional: true
+
+  classnames@2.5.1: {}
 
   client-only@0.0.1: {}
 
@@ -2258,7 +2264,8 @@ snapshots:
 
   ignore@5.3.2: {}
 
-  immutable@4.3.7: {}
+  immutable@4.3.7:
+    optional: true
 
   import-fresh@3.3.0:
     dependencies:
@@ -2619,7 +2626,8 @@ snapshots:
     dependencies:
       loose-envify: 1.4.0
 
-  readdirp@4.0.2: {}
+  readdirp@4.0.2:
+    optional: true
 
   reflect.getprototypeof@1.0.6:
     dependencies:
@@ -2682,6 +2690,7 @@ snapshots:
       chokidar: 4.0.1
       immutable: 4.3.7
       source-map-js: 1.2.1
+    optional: true
 
   scheduler@0.23.2:
     dependencies:
